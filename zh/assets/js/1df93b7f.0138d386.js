@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkeasycraft_documentation=self.webpackChunkeasycraft_documentation||[]).push([[4583],{36866:(e,t,c)=>{c.r(t),c.d(t,{default:()=>u});var n=c(96540),a=c(56347);function u(){const e=(0,a.W6)();return(0,n.useEffect)(()=>{e.replace("/docs/intro")},[e]),null}}}]);

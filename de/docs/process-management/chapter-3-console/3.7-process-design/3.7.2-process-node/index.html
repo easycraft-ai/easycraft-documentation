@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="de" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">3.7.2-process-node | EasyCraft</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://docs.easycraft.ai/de/img/彩色logo 400x104.png"><meta data-rh="true" name="twitter:image" content="https://docs.easycraft.ai/de/img/彩色logo 400x104.png"><meta data-rh="true" property="og:url" content="https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node"><meta data-rh="true" property="og:locale" content="de"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" property="og:locale:alternate" content="fr"><meta data-rh="true" property="og:locale:alternate" content="zh"><meta data-rh="true" property="og:locale:alternate" content="ms"><meta data-rh="true" name="docusaurus_locale" content="de"><meta data-rh="true" name="docsearch:language" content="de"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="3.7.2-process-node | EasyCraft"><meta data-rh="true" name="description" content="3.7.2 Process Node"><meta data-rh="true" property="og:description" content="3.7.2 Process Node"><link data-rh="true" rel="icon" href="/de/img/favicon 50x50.png"><link data-rh="true" rel="canonical" href="https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="en"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/fr/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="fr"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="de"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/zh/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="zh"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/ms/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="ms"><link data-rh="true" rel="alternate" href="https://docs.easycraft.ai/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Proccess Management","item":"https://docs.easycraft.ai/de/docs/category/proccess-management"},{"@type":"ListItem","position":2,"name":"Console","item":"https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/"},{"@type":"ListItem","position":3,"name":"3.7-process-design","item":"https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/3.7-process-design/"},{"@type":"ListItem","position":4,"name":"3.7.2-process-node","item":"https://docs.easycraft.ai/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node"}]}</script><link rel="stylesheet" href="/de/assets/css/styles.eca06431.css">
+<script src="/de/assets/js/runtime~main.8ecda809.js" defer="defer"></script>
+<script src="/de/assets/js/main.11f5f532.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/de/img/彩色logo 400x104.png"><link rel="preload" as="image" href="/de/img/τÖ╜400x104.png"><link rel="preload" as="image" href="/img/node properties.png"><link rel="preload" as="image" href="/img/data permission settings.png"><link rel="preload" as="image" href="/img/business methods configuration.png"><link rel="preload" as="image" href="/img/listener configuration steps.png"><link rel="preload" as="image" href="/img/assign default handler.png"><link rel="preload" as="image" href="/img/form selection settings.png"><link rel="preload" as="image" href="/img/approval comment form configuration.png"><link rel="preload" as="image" href="/img/add timeout policy.png"><link rel="preload" as="image" href="/img/time limit settings.png"><link rel="preload" as="image" href="/img/operation config.png"><link rel="preload" as="image" href="/img/operation config in the process platform module.png"><link rel="preload" as="image" href="/img/operations available for initiator during process runtime.png"><link rel="preload" as="image" href="/img/advanced settings.png"><link rel="preload" as="image" href="/img/process level options for process initiator.png"><link rel="preload" as="image" href="/img/push content settings window.png"><link rel="preload" as="image" href="/img/dynamic sup-process.png"><div role="region" aria-label="Zum Hauptinhalt springen"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Zum Hauptinhalt springen</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/de/"><div class="navbar__logo"><img src="/de/img/彩色logo 400x104.png" alt="EasyCraft Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/de/img/τÖ╜400x104.png" alt="EasyCraft Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"></b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/de/docs/intro">Documentation</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>Deutsch</a><ul class="dropdown__menu"><li><a href="/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="en">English</a></li><li><a href="/fr/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="fr">Français</a></li><li><a href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active" lang="de">Deutsch</a></li><li><a href="/zh/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="zh">中文</a></li><li><a href="/ms/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node" target="_self" rel="noopener noreferrer" class="dropdown__link" lang="ms">Bahasa Melayu</a></li></ul></div><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Umschalten zwischen dunkler und heller Ansicht (momentan system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Zurück nach oben scrollen" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/de/docs/intro">Welcome to EasyCraft</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/de/docs/category/portal-management">Portal Management</a><button aria-label="Expand sidebar category &#x27;Portal Management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/de/docs/category/low-code-platform">Low Code Platform</a><button aria-label="Expand sidebar category &#x27;Low Code Platform&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/de/docs/category/integration-platform">Integration Platform</a><button aria-label="Expand sidebar category &#x27;Integration Platform&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/de/docs/category/proccess-management">Proccess Management</a><button aria-label="Collapse sidebar category &#x27;Proccess Management&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-1-module-overview/">Chapter 1 Module Overview</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-2-quick-start-guide-for-template-configuration/">Chapter 2 Quick Start Guide for Template Configuration</a><button aria-label="Expand sidebar category &#x27;Chapter 2 Quick Start Guide for Template Configuration&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/de/docs/process-management/chapter-3-console/">Console</a><button aria-label="Collapse sidebar category &#x27;Console&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.1-process-management-entry">Process Management Entry</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.10-data-permission">3.10-data-permission</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.11-permission-changes">3.11-permission-changes</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.2-template-management/">3.2-template-management</a><button aria-label="Expand sidebar category &#x27;3.2-template-management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.3-template-category-management/">3.3-template-category-management</a><button aria-label="Expand sidebar category &#x27;3.3-template-category-management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.4-template-list/">3.4-template-list</a><button aria-label="Expand sidebar category &#x27;3.4-template-list&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.5-data-model">Data Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.6-form-design">Form Design</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/">3.7-process-design</a><button aria-label="Collapse sidebar category &#x27;3.7-process-design&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.1-process-diagram">Process Diagram</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node">3.7.2-process-node</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.3-process-data">3.7.3-process-data</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.4-business-methods">3.7.4-business-methods</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.5-process-properties">Process Properties</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.6-process-simulation">Process Simulation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.7-process-version-management">3.7.7-process-version-management</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.8-numbering-settings">3.7.8-numbering-settings</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.8-generic-template/">3.8-generic-template</a><button aria-label="Expand sidebar category &#x27;3.8-generic-template&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/de/docs/process-management/chapter-3-console/3.9-advanced-settings/">3.9-advanced-settings</a><button aria-label="Expand sidebar category &#x27;3.9-advanced-settings&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/de/docs/process-management/chapter-3-console/chapter-4-process-homepage">chapter-4-process-homepage</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/de/docs/process-management/chapter-4-process-homepage/4.1-home-page-introduction">chapter-4-process-homepage</a></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/de/docs/category/organization--permission-management">Organization &amp; Permission Management</a><button aria-label="Expand sidebar category &#x27;Organization &amp; Permission Management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/de/docs/category/system-management">System Management</a><button aria-label="Expand sidebar category &#x27;System Management&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/de/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/de/docs/category/proccess-management"><span>Proccess Management</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/de/docs/process-management/chapter-3-console/"><span>Console</span></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/de/docs/process-management/chapter-3-console/3.7-process-design/"><span>3.7-process-design</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">3.7.2-process-node</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Auf dieser Seite</button></div><div class="theme-doc-markdown markdown"><header><h1>3.7.2-process-node</h1></header><h3 class="anchor anchorWithStickyNavbar_LWe7" id="372-process-node">3.7.2 Process Node<a href="#372-process-node" class="hash-link" aria-label="Direkter Link zur 3.7.2 Process Node" title="Direkter Link zur 3.7.2 Process Node">​</a></h3>
+<p>Node types include: <strong>Approval Nodes, CC Nodes, Signature Nodes, Voting Nodes, Robot Nodes, Subprocess Nodes, Embedded Subprocess Nodes, Flexible Subprocess Nodes, Auto-authority Subprocess Nodes, Conditional Branches, Manual Branches, Parallel Branches, Rule Block Subprocess Nodes, Signal Waiting Nodes, Dummy End Nodes</strong>.<br>
+<!-- -->These node types are designed to cover virtually all standard business use cases.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="3721-common-node-properties">3.7.2.1 Common Node Properties<a href="#3721-common-node-properties" class="hash-link" aria-label="Direkter Link zur 3.7.2.1 Common Node Properties" title="Direkter Link zur 3.7.2.1 Common Node Properties">​</a></h4>
+<p>While each node has unique properties, they also share common settings.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="37211-node-name">3.7.2.1.1 Node Name<a href="#37211-node-name" class="hash-link" aria-label="Direkter Link zur 3.7.2.1.1 Node Name" title="Direkter Link zur 3.7.2.1.1 Node Name">​</a></h5>
+<p>The Node Name is required. When a node is added to the canvas, it has a default name that can be modified for business needs.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="37211-node-help">3.7.2.1.1 Node Help<a href="#37211-node-help" class="hash-link" aria-label="Direkter Link zur 3.7.2.1.1 Node Help" title="Direkter Link zur 3.7.2.1.1 Node Help">​</a></h5>
+<p>Node Help is an optional field used to provide notes about the current node.</p>
+<div style="display:flex;justify-content:center"><img src="/img/node properties.png" alt="Portal Diagram" width="800"></div>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="37212-data-permission">3.7.2.1.2 Data Permission<a href="#37212-data-permission" class="hash-link" aria-label="Direkter Link zur 3.7.2.1.2 Data Permission" title="Direkter Link zur 3.7.2.1.2 Data Permission">​</a></h5>
+<p>Data Permission sets the usage permissions of a node’s form fields.<br>
+<!-- -->Click <strong>Data Permission → Open Data Permission</strong> to configure detailed read/edit/required settings for each field.</p>
+<p>For example: If the “Manager Approval” node is given <strong>Editable</strong> permission, managers can update fields like purchase amount and budget during approval.</p>
+<div style="display:flex;justify-content:center"><img src="/img/data permission settings.png" alt="Portal Diagram" width="800"></div>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="37213-listener-configuration">3.7.2.1.3 Listener Configuration<a href="#37213-listener-configuration" class="hash-link" aria-label="Direkter Link zur 3.7.2.1.3 Listener Configuration" title="Direkter Link zur 3.7.2.1.3 Listener Configuration">​</a></h5>
+<p>Listeners monitor events at the process, node, and task levels (e.g., <strong>Process Start, Node Entry, Task Submission</strong>). They trigger actions such as <strong>Business Methods, Context Variable Assignment, Process Task Expansion, and Broadcast Process Signal</strong>.</p>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Project management: Automatically generate a project record after approval.</li>
+<li>License management: Update license status upon approval.</li>
+<li>Task management: Update task status after confirmation.</li>
+</ul>
+<p><strong>Configuration Steps:</strong></p>
+<ol>
+<li>Go to the <strong>Listener Config</strong> tab and click <strong>Add Listener</strong>.</li>
+<li>Name the listener.</li>
+<li>Select the event type (e.g., <strong>Handler Approval Event</strong>).</li>
+<li>Choose <strong>Business Methods</strong> as the Execute Action.</li>
+<li>Select the corresponding Business Method.</li>
+</ol>
+<div style="display:flex;justify-content:center"><img src="/img/business methods configuration.png" alt="Portal Diagram" width="800"></div>
+<div style="display:flex;justify-content:center"><img src="/img/listener configuration steps.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–8 Listener Configuration Steps</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="3722-approval-node">3.7.2.2 Approval Node<a href="#3722-approval-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.2 Approval Node" title="Direkter Link zur 3.7.2.2 Approval Node">​</a></h3>
+<p>The Approval Node is the most frequently used node type, mainly for setting approvers.<br>
+<!-- -->Approvers can be selected from the organizational structure or defined via the formula editor.</p>
+<p>Supports:</p>
+<ul>
+<li>Sequential approval</li>
+<li>Joint review (all must approve)</li>
+<li>Single approval (any approver can approve)</li>
+<li>Skipping duplicate identities</li>
+</ul>
+<p><strong>Adding Approval Nodes:</strong> Click on a node in the left panel or drag it onto the canvas.</p>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="37221-node-properties">3.7.2.2.1 Node Properties<a href="#37221-node-properties" class="hash-link" aria-label="Direkter Link zur 3.7.2.2.1 Node Properties" title="Direkter Link zur 3.7.2.2.1 Node Properties">​</a></h4>
+<p><strong>Basic Info</strong></p>
+<p><strong>a) Default Handler</strong><br>
+<!-- -->Ways to assign node handlers:</p>
+<ul>
+<li><strong>Directory Picker</strong>: Select personnel, positions, or groups from organizational structures.</li>
+<li><strong>Formula Editor</strong>: Dynamically determine approvers via simple mode, expressions, scripts, or advanced mode.</li>
+</ul>
+<div style="display:flex;justify-content:center"><img src="/img/assign default handler.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–9 Assign Default Handler</em></p>
+<p>Additional options:</p>
+<ul>
+<li><strong>Recalculate the handler when the process flows again</strong>: Dynamically updates handlers when organizational changes occur.</li>
+<li><strong>Only allow adding new ones when modifying</strong>: Restricts modifications to adding new handlers only.</li>
+</ul>
+<p><strong>b) When No Handler</strong><br>
+<!-- -->If no handler is found, options include: <strong>Auto Skip</strong>, <strong>Anomaly Report</strong>, or <strong>Designated Handler</strong>.</p>
+<p><strong>c) When Multiple Handlers</strong></p>
+<ul>
+<li><strong>Sequential Processing</strong>: Approvers act in the specified order.</li>
+<li><strong>Processed by One of Them</strong>: Approved once all designated approvers review.</li>
+<li><strong>Processed by All</strong>: Approved as soon as one approver reviews.</li>
+</ul>
+<p><strong>d) When Duplicate Identity</strong></p>
+<ul>
+<li>Skip only when adjacent handlers are duplicates (default).</li>
+<li>Skip if the handler already approved earlier.</li>
+<li>Do not skip duplicates (flows normally).</li>
+</ul>
+<p><strong>Form Selection</strong><br>
+<!-- -->Nodes can be configured to display specific forms, either system-designed or third-party integrated forms.</p>
+<ul>
+<li><strong>Scene Associated with the Form</strong>: Default is auto-match; manual selection possible.</li>
+</ul>
+<div style="display:flex;justify-content:center"><img src="/img/form selection settings.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–10 Form Selection Settings</em></p>
+<p><strong>e) Approval Comment Form</strong><br>
+<!-- -->Allows configuration of special forms for approval comments.</p>
+<p>Types:</p>
+<ul>
+<li><strong>System Default</strong>: Single free-text field</li>
+<li><strong>Reference Other Templates</strong>: From <em>Process Platform → Basic Settings → Approval Comment Form</em></li>
+<li><strong>Customize</strong>: From <em>Low-code Platform → Form Mgt → Approval Comment Form</em></li>
+</ul>
+<p>Additional features:</p>
+<ul>
+<li><strong>Default Value</strong>: Pre-fill fields</li>
+<li><strong>Data Sync &amp; Aggregation</strong>: Sync approval form data with context variables</li>
+<li><strong>Approval History Display</strong>: Control visibility of fields</li>
+<li><strong>Process Configuration</strong>: Define operations triggered by comment form fields</li>
+<li><strong>Approval Comment Display</strong>: Choose always visible or only after node ends</li>
+</ul>
+<p>id: 3.7.2.2-approval-node-details
+title: Approval Node Configuration</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="approval-comment-form-configuration">Approval Comment Form Configuration<a href="#approval-comment-form-configuration" class="hash-link" aria-label="Direkter Link zur Approval Comment Form Configuration" title="Direkter Link zur Approval Comment Form Configuration">​</a></h3>
+<p>Approval Comment Forms allow detailed configuration for capturing structured comments during approval.</p>
+<div style="display:flex;justify-content:center"><img src="/img/approval comment form configuration.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–11 Approval Comment Form Configuration</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="timeout-settings">Timeout Settings<a href="#timeout-settings" class="hash-link" aria-label="Direkter Link zur Timeout Settings" title="Direkter Link zur Timeout Settings">​</a></h3>
+<p>You can create a new timeout policy or select one from the dropdown menu, sourced from:<br>
+<strong>Process Design → Process Properties → Timeout Settings</strong></p>
+<blockquote>
+<p><strong>Example:</strong> If a manager does not approve a request within 24 hours, the process escalates to an alternate approver.</p>
+</blockquote>
+<div style="display:flex;justify-content:center"><img src="/img/add timeout policy.png" alt="Portal Diagram" width="800"></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="time-limit-settings">Time Limit Settings<a href="#time-limit-settings" class="hash-link" aria-label="Direkter Link zur Time Limit Settings" title="Direkter Link zur Time Limit Settings">​</a></h3>
+<p>When configured, handlers can view the remaining processing time on the approval page.<br>
+<!-- -->If the time limit is exceeded, the page is marked as <strong>timeout</strong>.</p>
+<p>Timeout statistics are available at:<br>
+<strong>Process Platform → Process Analytics → Process Reports</strong></p>
+<div style="display:flex;justify-content:center"><img src="/img/time limit settings.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–13 Time Limit Settings</em></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37222-operation-config">3.7.2.2.2 Operation Config<a href="#37222-operation-config" class="hash-link" aria-label="Direkter Link zur 3.7.2.2.2 Operation Config" title="Direkter Link zur 3.7.2.2.2 Operation Config">​</a></h2>
+<p>Operation templates define the naming of operation buttons for process nodes.</p>
+<ul>
+<li>Sourced from: <strong>Process Platform → Basic Settings → Operation Config → Approval tab</strong></li>
+<li>Users may also click <strong>Edit Operation Settings</strong> to customize operations.</li>
+</ul>
+<div style="display:flex;justify-content:center"><img src="/img/operation config.png" alt="Portal Diagram" width="800"></div>
+<div style="display:flex;justify-content:center"><img src="/img/operation config in the process platform module.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–15 Operation Config in the Process Platform module</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="operations-available-for-initiator">Operations Available for Initiator<a href="#operations-available-for-initiator" class="hash-link" aria-label="Direkter Link zur Operations Available for Initiator" title="Direkter Link zur Operations Available for Initiator">​</a></h3>
+<ul>
+<li><strong>Withdraw</strong>: Return the process to the previous step.</li>
+<li><strong>Abandon</strong>: Terminate the process. Approved nodes get a notification.</li>
+<li><strong>Urge</strong>: Remind the next handler via a to-do notification.</li>
+<li><strong>Circulate</strong>: Share the process with relevant personnel for review.</li>
+<li><strong>Collaboration</strong>: Request assistance at the drafting stage; collaborators edit and submit.</li>
+</ul>
+<div style="display:flex;justify-content:center"><img src="/img/operations available for initiator during process runtime.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–16 Operations Available for Initiator During Process Runtime</em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="actions-available-for-current-handler">Actions Available for Current Handler<a href="#actions-available-for-current-handler" class="hash-link" aria-label="Direkter Link zur Actions Available for Current Handler" title="Direkter Link zur Actions Available for Current Handler">​</a></h3>
+<ul>
+<li><strong>Approve</strong>: Pass to the next node.</li>
+<li><strong>Transfer</strong>: Assign approval to another user.</li>
+<li><strong>Communicate</strong>: Start discussions with organizational users.</li>
+<li><strong>Abandon</strong>: Terminate the process.</li>
+<li><strong>Reject</strong>: Return to a previous node.</li>
+<li><strong>Pre-Approval</strong>: Add an approver before current handler.</li>
+<li><strong>Post-Approval</strong>: Add approvers after current handler.</li>
+<li><strong>Distribution</strong>: Share with others without altering flow.</li>
+<li><strong>Node Pause / Reactivate</strong>: Temporarily halt/resume approval.</li>
+<li><strong>Circulate</strong>: Share process for review.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="operations-available-for-past-handler">Operations Available for Past Handler<a href="#operations-available-for-past-handler" class="hash-link" aria-label="Direkter Link zur Operations Available for Past Handler" title="Direkter Link zur Operations Available for Past Handler">​</a></h3>
+<ul>
+<li><strong>Withdraw</strong>: Allowed for Approve and Transfer before next handler acts.</li>
+<li><strong>Urge</strong>: Notify current handler.</li>
+<li><strong>Circulate</strong>: Share process for review.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37223-advanced">3.7.2.2.3 Advanced<a href="#37223-advanced" class="hash-link" aria-label="Direkter Link zur 3.7.2.2.3 Advanced" title="Direkter Link zur 3.7.2.2.3 Advanced">​</a></h2>
+<div style="display:flex;justify-content:center"><img src="/img/advanced settings.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–17 Advanced Settings</em></p>
+<p><strong>a) Extended Operations</strong></p>
+<ul>
+<li>Modify handlers of downstream nodes.</li>
+<li>Options:<!-- -->
+<ul>
+<li><strong>Nodes Can be Modified</strong></li>
+<li><strong>Nodes Must be Modified</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>b) Modify Process Diagram</strong></p>
+<ul>
+<li>Disabled by default.</li>
+<li>Allows adding new nodes during runtime (affects only current instance).</li>
+</ul>
+<p><strong>c) Permission to View Comment</strong></p>
+<ul>
+<li>Disabled by default.</li>
+<li>Handlers can set comment viewing permissions.</li>
+</ul>
+<p><strong>d) Upload Comment Attachment</strong></p>
+<ul>
+<li>Enabled by default.</li>
+</ul>
+<p><strong>e) Mobile Approval</strong></p>
+<ul>
+<li>Enabled by default. Mobile-friendly approval.</li>
+</ul>
+<p><strong>f) Quick Approval</strong></p>
+<ul>
+<li>Disabled by default. Allows batch approval from To-do list.</li>
+<li>Restrictions apply if required fields or review points exist.</li>
+</ul>
+<p><strong>g) Scheduled Approval</strong></p>
+<ul>
+<li>Disabled by default. Groups tasks into scheduled batches.</li>
+</ul>
+<p><strong>h) DING Notification</strong></p>
+<ul>
+<li>Enabled by default. Requires DingTalk integration.</li>
+</ul>
+<p><strong>i) Review Points Settings</strong></p>
+<ul>
+<li>Add required review checks; prevents submission if unchecked.</li>
+</ul>
+<p><strong>j) Handwritten Signature Required</strong></p>
+<ul>
+<li>Mobile-only. Disabled by default.</li>
+</ul>
+<p><strong>k) Urgency Level</strong></p>
+<ul>
+<li>Disabled by default. Controls priority in handlers’ to-do list.</li>
+<li>Options:<!-- -->
+<ul>
+<li><strong>Only Active for Next Task</strong></li>
+<li><strong>Decided by the Initiator</strong></li>
+</ul>
+</li>
+</ul>
+<div style="display:flex;justify-content:center"><img src="/img/process level options for process initiator.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–18 Process Level Options for Process Initiator</em></p>
+<p><strong>l) Allow Additional Reminders</strong></p>
+<ul>
+<li>Disabled by default.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="approval-settings">Approval Settings<a href="#approval-settings" class="hash-link" aria-label="Direkter Link zur Approval Settings" title="Direkter Link zur Approval Settings">​</a></h3>
+<ul>
+<li><strong>Permission to View Approval Comment</strong>
+<ul>
+<li>Options: <strong>All Visible (default)</strong> or <strong>Partially Visible</strong></li>
+</ul>
+</li>
+<li><strong>Recommended Handler</strong>
+<ul>
+<li>Options include Institution, Current Department, Org Structure, Formula Editor.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="push-notification">Push Notification<a href="#push-notification" class="hash-link" aria-label="Direkter Link zur Push Notification" title="Direkter Link zur Push Notification">​</a></h3>
+<div style="display:flex;justify-content:center"><img src="/img/push content settings window.png" alt="Portal Diagram" width="800"></div>
+<p><em>Figure 3.7–19 Push Content Settings Window</em></p>
+<ul>
+<li><strong>Push Method</strong>: Default = system notification.<!-- -->
+<ul>
+<li>Customizable to include email, SMS, etc.</li>
+</ul>
+</li>
+<li><strong>Push Content</strong>: Configurable titles and messages.<!-- -->
+<ul>
+<li>Form Data and Process Data may be inserted.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3723-cc-node">3.7.2.3 CC Node<a href="#3723-cc-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.3 CC Node" title="Direkter Link zur 3.7.2.3 CC Node">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="37231-application-scenario-overview">3.7.2.3.1 Application Scenario Overview<a href="#37231-application-scenario-overview" class="hash-link" aria-label="Direkter Link zur 3.7.2.3.1 Application Scenario Overview" title="Direkter Link zur 3.7.2.3.1 Application Scenario Overview">​</a></h3>
+<p><strong>Use Cases:</strong></p>
+<ul>
+<li>Notify payroll specialist after leave approval (record-keeping).</li>
+<li>Notify administrative staff after seal approval (archiving).</li>
+</ul>
+<p>Recipients configured via Org Structure or Formula Editor.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="37232-node-property-description">3.7.2.3.2 Node Property Description<a href="#37232-node-property-description" class="hash-link" aria-label="Direkter Link zur 3.7.2.3.2 Node Property Description" title="Direkter Link zur 3.7.2.3.2 Node Property Description">​</a></h3>
+<ul>
+<li><strong>Name</strong>: Display name of the CC Node</li>
+<li><strong>No.</strong>: Unique ID (e.g., N6)</li>
+<li><strong>Default CC Recipient</strong>: From Org Structure or Formula Editor</li>
+<li><strong>Allow Comment Input</strong>: If enabled, CC handler can comment</li>
+<li><strong>System Message Type</strong>: Options = <em>To-Read</em> (default) or <em>To-Do</em></li>
+<li><strong>Extended Operations – Process Circulation</strong>: If enabled, CC recipients can circulate</li>
+<li><strong>When Handler Is Empty</strong>: Options = Auto Skip, Report Anomaly, or Designated Handler</li>
+<li><strong>Select Form</strong>: Choose form linked to the node</li>
+<li><strong>Form Application Scenario</strong>: Automatic or manual selection</li>
+</ul>
+<p><em>Figure 3.7–61 CC Node Settings</em></p>
+<p>id: 3.7.2.4-signature-voting-robot-branches
+title: Signature, Voting, Robot, and Branch Nodes</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3724-signature-node">3.7.2.4 Signature Node<a href="#3724-signature-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.4 Signature Node" title="Direkter Link zur 3.7.2.4 Signature Node">​</a></h2>
+<p><strong>Purpose:</strong> Allows the handler to perform a Signature confirmation and add Approval Comments.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="37241-application-scenario-overview">3.7.2.4.1 Application Scenario Overview<a href="#37241-application-scenario-overview" class="hash-link" aria-label="Direkter Link zur 3.7.2.4.1 Application Scenario Overview" title="Direkter Link zur 3.7.2.4.1 Application Scenario Overview">​</a></h3>
+<p><strong>Use Cases</strong></p>
+<ul>
+<li>Leader&#x27;s signature required for new company establishment applications.</li>
+<li>Business owner&#x27;s signature for development project requirement confirmations.</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->In a new company establishment application, a leader&#x27;s handwritten signature (mobile-only) is required for confirmation.</p>
+<p><strong>Operation Steps</strong></p>
+<ol>
+<li>Add a Signature Node and set the Handler.</li>
+<li>Open <strong>Advanced Properties</strong> in Node Properties.</li>
+<li>Enable <strong>Handwritten Signature Required</strong>.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3725-voting-node">3.7.2.5 Voting Node<a href="#3725-voting-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.5 Voting Node" title="Direkter Link zur 3.7.2.5 Voting Node">​</a></h2>
+<p><strong>Purpose:</strong> Allows handlers to Vote (<em>Approve, Reject, Abstain</em>).<br>
+<!-- -->The process moves to the next node when the vote count meets configured Voting Rules.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="37251-application-scenario-overview">3.7.2.5.1 Application Scenario Overview<a href="#37251-application-scenario-overview" class="hash-link" aria-label="Direkter Link zur 3.7.2.5.1 Application Scenario Overview" title="Direkter Link zur 3.7.2.5.1 Application Scenario Overview">​</a></h3>
+<p><strong>Use Cases</strong></p>
+<ul>
+<li>Executives voting on a company policy.</li>
+<li>Experts voting on project initiation approval.</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->In a project initiation process, the project is approved if <strong>≥ 2/3 of experts vote in favor</strong>.</p>
+<p><strong>Voting Rules</strong></p>
+<ul>
+<li><strong>Conditions</strong>:<!-- -->
+<ul>
+<li>Reach Pass Rate (%)</li>
+<li>Reach Pass Count</li>
+<li>Reach Veto Rate (%)</li>
+<li>Reach Veto Count</li>
+<li>One-vote Veto</li>
+</ul>
+</li>
+<li><strong>Execute Action</strong>:<!-- -->
+<ul>
+<li>Flow Downstream</li>
+<li>Jump Forward/Backward</li>
+<li>Stay at Current Node</li>
+<li>End Process</li>
+</ul>
+</li>
+<li><strong>Multiple Rules</strong> can be configured in order.</li>
+<li>If none match, configure a fallback Execute Action.</li>
+<li><strong>Voting End Time</strong>:<!-- -->
+<ul>
+<li>Terminate Immediately on Condition Match</li>
+<li>Terminate After All Votes</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> Pass/Veto rates must be between 0–100; counts must be integers.</p>
+</blockquote>
+<p><strong>Node Property Descriptions</strong></p>
+<ul>
+<li><strong>Basic Info</strong>: Node Name, No., Default Voters</li>
+<li><strong>Voting Rules</strong>: Configurable as above</li>
+<li><strong>When Handler Is Empty</strong>: Define fallback behavior</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3726-robot-node">3.7.2.6 Robot Node<a href="#3726-robot-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.6 Robot Node" title="Direkter Link zur 3.7.2.6 Robot Node">​</a></h2>
+<p><strong>Purpose:</strong> Executes automated system tasks such as:</p>
+<ul>
+<li>Reading/writing form data</li>
+<li>Saving data to database tables</li>
+<li>Modifying document fields using Formula Editor</li>
+<li>Initiating subprocesses</li>
+<li>Calling RPA (Robotic Process Automation) tasks</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios">Application Scenarios<a href="#application-scenarios" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li>Project tracking: Auto-assign tasks on specific dates.</li>
+<li>Contract approval: Auto-fill supplier data from database.</li>
+<li>RPA integration: Robot performs tasks before process continues.</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->A project tracking process flows to a responsible person on September 14th for updating phase content.</p>
+<p><strong>Implementation Effect</strong><br>
+<!-- -->Add a Robot Node named <em>“Pause and Wait for 14 Days to Wake Up”</em>, causing an automated pause.</p>
+<p><strong>Operation Steps</strong></p>
+<ol>
+<li>Add a Robot Node and set its name.</li>
+<li>Select Robot Type:<!-- -->
+<ul>
+<li><strong>Execute Business Method</strong> (requires pre-configured methods)</li>
+<li><strong>Node Control</strong></li>
+<li><strong>RPA Integration</strong></li>
+</ul>
+</li>
+<li>Set <strong>Wake-up Time</strong>: Specific, Relative, or Custom via Formula Editor.</li>
+<li>If <strong>RPA Integration</strong>:<!-- -->
+<ul>
+<li>Select Task</li>
+<li>Configure Value Transfer (data mapping)</li>
+<li>Choose Flow Method:<!-- -->
+<ul>
+<li><strong>Pause and Wait</strong> (with return values)</li>
+<li><strong>Continue Flow</strong> (without waiting)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>Node Property Descriptions</strong></p>
+<ul>
+<li><strong>Basic Info</strong>: Node Name, No.</li>
+<li><strong>Robot Type</strong>: Business Method, Node Control, RPA Integration</li>
+<li><strong>Node Anomaly Skip</strong>: Option to skip on anomaly</li>
+<li><strong>Robot Settings</strong>:<!-- -->
+<ul>
+<li>Wake-up Time</li>
+<li>Select Task (for RPA)</li>
+<li>Flow Method</li>
+<li>Return Value Settings (for Pause and Wait)</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3727-conditional-branch">3.7.2.7 Conditional Branch<a href="#3727-conditional-branch" class="hash-link" aria-label="Direkter Link zur 3.7.2.7 Conditional Branch" title="Direkter Link zur 3.7.2.7 Conditional Branch">​</a></h2>
+<p><strong>Purpose:</strong> Directs process flow based on pre-set branching conditions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-1">Application Scenarios<a href="#application-scenarios-1" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li>Leave &gt; 3 days → Supervisor + Department Head Approval</li>
+<li>Office supplies &gt; 10 units → Department Manager Approval</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->Leave request:</p>
+<ul>
+<li>≤3 days → C.C. to Lily</li>
+<li>
+<blockquote>
+<p>3 days → Departmental Head Approval</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Implementation Effect</strong><br>
+<!-- -->Branch flows according to formula conditions in the <strong>Formula Editor</strong>.</p>
+<p><strong>Operation Steps</strong></p>
+<ol>
+<li>Add a Conditional Branch (e.g., <em>Leave Days Judgment</em>).</li>
+<li>Add corresponding branch nodes.</li>
+<li>Select <strong>Formula Editor</strong> for Startup Method.</li>
+<li>Define conditions &amp; name flow connections.</li>
+</ol>
+<p><strong>Example Conditions</strong></p>
+<ul>
+<li>≤3 days → <em>Total (Days) ≤ 3</em></li>
+<li>
+<blockquote>
+<p>3 days → <em>Total (Days) &gt; 3</em></p>
+</blockquote>
+</li>
+</ul>
+<p><strong>Node Property Descriptions</strong></p>
+<ul>
+<li><strong>Startup Method</strong>: Formula Editor or Matching Rules</li>
+<li><strong>Flow when Conditions Do Not Match</strong>:<!-- -->
+<ul>
+<li>Default Direction</li>
+<li>Otherwise process pauses</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3728-manual-branch">3.7.2.8 Manual Branch<a href="#3728-manual-branch" class="hash-link" aria-label="Direkter Link zur 3.7.2.8 Manual Branch" title="Direkter Link zur 3.7.2.8 Manual Branch">​</a></h2>
+<p><strong>Purpose:</strong> Allows manual decision of next process flow.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-2">Application Scenarios<a href="#application-scenarios-2" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li>Complex procurement project initiation</li>
+<li>Complex construction payment applications</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->A procurement project requires manual intervention to decide the next step.</p>
+<p><strong>Implementation Effect</strong><br>
+<!-- -->In <em>Process Approval → Next Step</em>, the user selects among manual branch options.</p>
+<p><strong>Operation Steps</strong></p>
+<ol>
+<li>Add a Manual Branch node.</li>
+<li>Select the node deciding the flow.</li>
+<li>Add subsequent approval nodes.</li>
+</ol>
+<p><strong>Node Property Descriptions</strong></p>
+<ul>
+<li><strong>Manual Branch Startup Method</strong>:<!-- -->
+<ul>
+<li>Decided by Previous Manual Node</li>
+<li>Decided by Start Node</li>
+</ul>
+</li>
+<li><strong>Select Default Direction</strong>: Optional auto-selection; otherwise, handler chooses manually.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3729-parallel-branch">3.7.2.9 Parallel Branch<a href="#3729-parallel-branch" class="hash-link" aria-label="Direkter Link zur 3.7.2.9 Parallel Branch" title="Direkter Link zur 3.7.2.9 Parallel Branch">​</a></h2>
+<p><strong>Purpose:</strong> Initiates multiple parallel flows requiring concurrent approvals.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-3">Application Scenarios<a href="#application-scenarios-3" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li>Employee exit handover requiring Dept, Admin, HR, IT, Finance approval</li>
+<li>Content publishing requiring multi-departmental approval</li>
+</ul>
+<p><strong>Scenario Example</strong><br>
+<!-- -->Exit handover process splits into parallel flows: Department Work, Admin, HR, IT, and Finance.</p>
+<p><strong>Implementation Effect</strong><br>
+<!-- -->Parallel approvals merge into a single node (e.g., Employee Signature).</p>
+<p><strong>Operation Steps</strong></p>
+<ol>
+<li>Add a Parallel Branch node.</li>
+<li>Add Approval Nodes for each parallel path.</li>
+<li>Select Startup Method:<!-- -->
+<ul>
+<li><strong>All Start</strong>: All parallel branches run</li>
+<li><strong>Manual Decision</strong>: Previous Manual Node selects</li>
+<li><strong>Condition Match</strong>: Formula Editor or Matching Rules</li>
+</ul>
+</li>
+<li>Select End Method:<!-- -->
+<ul>
+<li><strong>All End</strong>: Wait for all</li>
+<li><strong>Any End</strong>: Continue after first completion</li>
+<li><strong>Conditional End</strong>: Continue when condition met</li>
+</ul>
+</li>
+</ol>
+<p><strong>Node Property Descriptions</strong></p>
+<ul>
+<li><strong>Basic Info</strong>: Node Name, No.</li>
+<li><strong>Startup Method</strong>: All Start, Manual Decision, Condition Match</li>
+<li><strong>End Method</strong>: All End, Any End, Conditional End</li>
+</ul>
+<p>id: 3.7.2.10-advanced-nodes
+title: Advanced Process Nodes</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37210-subprocess-node">3.7.2.10 Subprocess Node<a href="#37210-subprocess-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.10 Subprocess Node" title="Direkter Link zur 3.7.2.10 Subprocess Node">​</a></h2>
+<p><strong>Purpose:</strong> Automatically initiates one or more new process instances when the main process flows through it.<br>
+<!-- -->The main process may continue independently or wait for the sub-process status.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-4">Application Scenarios<a href="#application-scenarios-4" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>HR Management:</strong> Contract renewal triggers multiple sub-processes for different employees.</li>
+<li><strong>Procurement:</strong> Initiate sub-processes for each product in procurement details.</li>
+<li><strong>Travel Expenses:</strong> Approved travel application triggers reimbursement process with auto-filled data.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps">Configuration Steps<a href="#configuration-steps" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li><strong>Design Forms and Processes</strong> for main and sub-processes.</li>
+<li><strong>Add Sub-Process Node</strong> and name it (e.g., <em>Initiate Reimbursement Approval</em>).</li>
+<li><strong>Select Sub-Process Template</strong> from Process Management or other modules.</li>
+<li><strong>Sub-Process Initiation Settings:</strong>
+<ul>
+<li>Initiator: Select from directory picker or Formula Editor.</li>
+<li>Skip Draft Node: Optionally bypass drafting.</li>
+<li>Start Method:<!-- -->
+<ul>
+<li>Each Initiator Starts One Sub-Process</li>
+<li>Only Start One Sub-Process</li>
+<li>Start by Detail Table Row</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Parent-to-Child Value Transfer:</strong> Map parent form fields to sub-process fields.</li>
+<li><strong>Child-to-Parent Value Transfer:</strong>
+<ul>
+<li>Update: Match and update rows.</li>
+<li>Overwrite: Replace parent detail table rows.</li>
+</ul>
+</li>
+<li><strong>Parent Process Flow Method:</strong>
+<ul>
+<li>Continue Flow</li>
+<li>Flow After All Sub-Processes Complete</li>
+<li>Flow After Single Sub-Process Completes</li>
+<li>Continue Flow After Condition Met</li>
+</ul>
+</li>
+<li><strong>Abandonment &amp; Anomaly Notifications:</strong> Notify privileged user/initiator if abandoned or errored.</li>
+<li><strong>Child Process View Permissions:</strong> Option to allow child process initiator to view parent.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37211-embedded-sub-process">3.7.2.11 Embedded Sub-Process<a href="#37211-embedded-sub-process" class="hash-link" aria-label="Direkter Link zur 3.7.2.11 Embedded Sub-Process" title="Direkter Link zur 3.7.2.11 Embedded Sub-Process">​</a></h2>
+<p><strong>Purpose:</strong> Allows embedding of multiple sub-process templates within a node.<br>
+<!-- -->Each embedded sub-process can have its own administrator and start rules.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-5">Application Scenarios<a href="#application-scenarios-5" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Project Personnel Requests:</strong> Centralized + subsidiary control.</li>
+<li><strong>Policy Formulation:</strong> Sequential review across Admin, HR, Finance, Legal, then Senior Management.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-1">Configuration Steps<a href="#configuration-steps-1" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Add Embedded Sub-Process Node.</li>
+<li>Set <strong>Embedded Type:</strong>
+<ul>
+<li><strong>Generic Fragment Set:</strong>
+<ul>
+<li>Select pre-configured fragment from Template Center.</li>
+<li>Configure Data Mapping.</li>
+</ul>
+</li>
+<li><strong>Non-Generic Fragment Set:</strong>
+<ul>
+<li>Add Sub-Process Templates with rules.</li>
+<li>Set Template Name, Administrator, Start Rules via Formula Editor.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37212-free-sub-process">3.7.2.12 Free Sub-Process<a href="#37212-free-sub-process" class="hash-link" aria-label="Direkter Link zur 3.7.2.12 Free Sub-Process" title="Direkter Link zur 3.7.2.12 Free Sub-Process">​</a></h2>
+<p><strong>Purpose:</strong> Provides semi-flexible templates where approvers can insert additional approval nodes.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-6">Application Scenarios<a href="#application-scenarios-6" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Official Document Processing:</strong> Secretary decides which leaders approve.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-2">Configuration Steps<a href="#configuration-steps-2" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Add Free Sub-Process Node.</li>
+<li>Set Node Name and Initial Handler.</li>
+</ol>
+<blockquote>
+<p><strong>Tip:</strong> Each node can only determine the handler of the next node. If not set, the flow continues to the next node after the Free Sub-Process.</p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37213-dummy-end-node">3.7.2.13 Dummy End Node<a href="#37213-dummy-end-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.13 Dummy End Node" title="Direkter Link zur 3.7.2.13 Dummy End Node">​</a></h2>
+<p><strong>Purpose:</strong> Provides flexibility by allowing independent branch termination without affecting the main process.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-7">Application Scenarios<a href="#application-scenarios-7" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Parallel Approvals:</strong> Branches may end independently while the main process continues.</li>
+</ul>
+<p><strong>Effect:</strong><br>
+<!-- -->When the main branch ends, unapproved tasks in independent branches are reclaimed.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37214-signal-waiting-node">3.7.2.14 Signal Waiting Node<a href="#37214-signal-waiting-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.14 Signal Waiting Node" title="Direkter Link zur 3.7.2.14 Signal Waiting Node">​</a></h2>
+<p><strong>Purpose:</strong> Enables cross-process communication and conditional triggers.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-8">Application Scenarios<a href="#application-scenarios-8" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Cross-Process Collaboration:</strong>
+<ul>
+<li>Procurement triggered by insufficient parts in delivery.</li>
+<li>Deposit action required on fund shortage.</li>
+<li>Resignation triggers updates in other subsystems.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-3">Configuration Steps<a href="#configuration-steps-3" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Design Process Diagram.</li>
+<li>Configure <strong>Process Signals</strong> in Template Center.</li>
+<li>Add <strong>Signal Waiting Node:</strong>
+<ul>
+<li>Signal Capture Name</li>
+<li>Select Signal</li>
+<li>Signal Source (This Process, Parent, Child)</li>
+<li>Matching Rules</li>
+<li>Execution Action (e.g., Continue Flow)</li>
+</ul>
+</li>
+<li>Configure <strong>Node Listener</strong> to release signals.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37215-auto-authority-process">3.7.2.15 Auto-Authority Process<a href="#37215-auto-authority-process" class="hash-link" aria-label="Direkter Link zur 3.7.2.15 Auto-Authority Process" title="Direkter Link zur 3.7.2.15 Auto-Authority Process">​</a></h2>
+<p><strong>Purpose:</strong> References auto-authority templates to dynamically generate nodes at runtime.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-9">Application Scenarios<a href="#application-scenarios-9" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Leave Applications:</strong> Approvals determined via auto-authority template.</li>
+<li><strong>Department Manager Notifications:</strong> Managers edit forms and send messages.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-4">Configuration Steps<a href="#configuration-steps-4" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Add Auto-Authority Sub-Process Node and select template/version.</li>
+<li>Configure <strong>Mapping</strong> between template and auto-authority.</li>
+<li>Publish template.</li>
+<li>Initiator selects template when starting process.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="node-property-descriptions">Node Property Descriptions<a href="#node-property-descriptions" class="hash-link" aria-label="Direkter Link zur Node Property Descriptions" title="Direkter Link zur Node Property Descriptions">​</a></h3>
+<ul>
+<li>Select Auto-Authority Template.</li>
+<li>No Matching Result → anomaly report or skip.</li>
+<li>Value Transfer Settings via Formula Editor.</li>
+<li>Strategy Matching: Supports data permissions &amp; listener strategies.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37216-rule-block-sub-process">3.7.2.16 Rule Block Sub-Process<a href="#37216-rule-block-sub-process" class="hash-link" aria-label="Direkter Link zur 3.7.2.16 Rule Block Sub-Process" title="Direkter Link zur 3.7.2.16 Rule Block Sub-Process">​</a></h2>
+<p><strong>Purpose:</strong> Generates process fragments dynamically based on specified rules (parallel, sequential, nested).</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-5">Configuration Steps<a href="#configuration-steps-5" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Add Rule Block Node to canvas.</li>
+<li>Configure <strong>Parameter Settings:</strong>
+<ul>
+<li>Value Setting → Object Assignment</li>
+<li>Reference a variable (e.g., DesignedForm.Multi-lineText)</li>
+</ul>
+</li>
+<li>Create New Instance: Enter JSON data → process fragments auto-generated.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37217-smart-review-node">3.7.2.17 Smart Review Node<a href="#37217-smart-review-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.17 Smart Review Node" title="Direkter Link zur 3.7.2.17 Smart Review Node">​</a></h2>
+<p><strong>Purpose:</strong> Configures inspection rules to detect non-compliant content and enforce actions.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-10">Application Scenarios<a href="#application-scenarios-10" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Cost Management:</strong> Reject budget &gt; 100,000 back to Drafting.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-6">Configuration Steps<a href="#configuration-steps-6" class="hash-link" aria-label="Direkter Link zur Configuration Steps" title="Direkter Link zur Configuration Steps">​</a></h3>
+<ol>
+<li>Add Smart Review Node.</li>
+<li>Configure <strong>Review Rules:</strong>
+<ul>
+<li>Formula Editor Rules</li>
+<li>Smart Approval Assistant</li>
+<li>Edit Inspection Items (Name, Content, Conditions, Warning/Block).</li>
+</ul>
+</li>
+<li>Configure <strong>Actions on Review Blockage:</strong>
+<ul>
+<li>Continue Flow</li>
+<li>Manual Intervention</li>
+<li>Forward/Backward Jump</li>
+<li>Abandon Process</li>
+</ul>
+</li>
+<li>Create new instance and test.</li>
+<li>View Smart Review Report in approval record.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="37218-dynamic-sub-process">3.7.2.18 Dynamic Sub-Process<a href="#37218-dynamic-sub-process" class="hash-link" aria-label="Direkter Link zur 3.7.2.18 Dynamic Sub-Process" title="Direkter Link zur 3.7.2.18 Dynamic Sub-Process">​</a></h2>
+<p><strong>Note:</strong> Requires enabling <strong>Advanced Process Node</strong> in <em>Process Platform → Basic Settings</em>.</p>
+<p><strong>Purpose:</strong> Dynamically generates sub-process fragments during runtime based on selected organizational scope.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-11">Application Scenarios<a href="#application-scenarios-11" class="hash-link" aria-label="Direkter Link zur Application Scenarios" title="Direkter Link zur Application Scenarios">​</a></h3>
+<ul>
+<li><strong>Joint Departmental Reviews:</strong> Upper-level designates departments → each runs its own approval.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="features">Features<a href="#features" class="hash-link" aria-label="Direkter Link zur Features" title="Direkter Link zur Features">​</a></h3>
+<ul>
+<li>Binds to dynamic generic fragments.</li>
+<li>Pre-sets organizational scope.</li>
+<li>Handler of preceding manual node selects send objects.</li>
+<li>Generates multiple independent sub-process fragments dynamically.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="id-37-dynamic-subprocess-and-free-jumptitle-dynamic-sub-process-free-jump-node-process-data-and-business-methods">id: 3.7-dynamic-subprocess-and-free-jump
+title: Dynamic Sub-Process, Free Jump Node, Process Data, and Business Methods<a href="#id-37-dynamic-subprocess-and-free-jumptitle-dynamic-sub-process-free-jump-node-process-data-and-business-methods" class="hash-link" aria-label="Direkter Link zur id: 3.7-dynamic-subprocess-and-free-jump
+title: Dynamic Sub-Process, Free Jump Node, Process Data, and Business Methods" title="Direkter Link zur id: 3.7-dynamic-subprocess-and-free-jump
+title: Dynamic Sub-Process, Free Jump Node, Process Data, and Business Methods">​</a></h2>
+<div style="display:flex;justify-content:center"><img src="/img/dynamic sup-process.png" alt="Portal Diagram" width="800"></div>
+<p><strong>Figure 3.7–20 Dynamic Sup-process</strong></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-12">Application Scenarios:<a href="#application-scenarios-12" class="hash-link" aria-label="Direkter Link zur Application Scenarios:" title="Direkter Link zur Application Scenarios:">​</a></h3>
+<ul>
+<li><strong>Departmental Joint Review</strong>: In a departmental joint review scenario, each department conducts independent approvals, and their internal approval progress may vary. Users can drill down into the process diagram to view detailed flow information for each department.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites:<a href="#prerequisites" class="hash-link" aria-label="Direkter Link zur Prerequisites:" title="Direkter Link zur Prerequisites:">​</a></h3>
+<ul>
+<li>A dynamic generic fragment must be configured and activated in <strong>&quot;Process Platform - Process Fragments.&quot;</strong>
+<ul>
+<li>Within this fragment, the <strong>&quot;Leader Approval&quot;</strong> node needs to obtain the department leader of the joint review department.</li>
+<li>The handler scope for this node is configured using the formula editor to retrieve the department leader of the dynamic organization.</li>
+<li>The <strong>&quot;Dynamic Organization&quot;</strong> variable represents the specific department corresponding to the send object selected by the handler.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-7">Configuration Steps:<a href="#configuration-steps-7" class="hash-link" aria-label="Direkter Link zur Configuration Steps:" title="Direkter Link zur Configuration Steps:">​</a></h3>
+<ol>
+<li><strong>Add Dynamic Sub-Process Node</strong>:<br>
+<!-- -->Enter the process design interface, add a <strong>&quot;Dynamic Sub-Process Node&quot;</strong> to the canvas area, and configure its node properties.<!-- -->
+<ul>
+<li><strong>Organization Source</strong>: Choose between &quot;Previous Manual Node Designation&quot; or &quot;Default Organization.&quot;</li>
+<li><strong>Organization Scope</strong>:<!-- -->
+<ul>
+<li>Use Formula Editor: Define the organizational scope using the formula editor.</li>
+<li>View Data Settings: Review the data settings for the scope.</li>
+</ul>
+</li>
+<li><strong>Default Organization</strong>:<!-- -->
+<ul>
+<li>Use Formula Editor: Define the default organization using the formula editor.</li>
+<li>View Data Settings: Review the data settings for the default organization.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Initiate New Instance (Frontend)</strong>:<br>
+<!-- -->The initiator creates a new process instance, fills in the <strong>&quot;Joint Review Department&quot;</strong> field on the form, and submits the instance.</li>
+<li><strong>Select Send Objects</strong>:<br>
+<!-- -->At the <strong>&quot;Document Processing&quot;</strong> node, the next step is to select the <strong>&quot;Department Joint Review&quot;</strong> node and choose the send objects (e.g., specific departments).</li>
+<li><strong>View Instance Process Diagram</strong>:<br>
+<!-- -->After submission, view the instance process diagram. Based on the N selected send objects, N independent process fragments will be dynamically generated.</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="benefits">Benefits:<a href="#benefits" class="hash-link" aria-label="Direkter Link zur Benefits:" title="Direkter Link zur Benefits:">​</a></h3>
+<p>This functionality is highly applicable to approval scenarios in government and enterprise sectors, such as official document issuance and reception. When a single matter requires collaborative approval from multiple departments, each department processes internally and provides a final opinion. By integrating with the form&#x27;s <strong>&quot;Approval&quot;</strong> control, opinion lists can be summarized and presented on the form according to custom layouts and data filtering requirements, aiding subsequent approvers in their decision-making.</p>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="37219-free-jump-node">3.7.2.19 Free Jump Node<a href="#37219-free-jump-node" class="hash-link" aria-label="Direkter Link zur 3.7.2.19 Free Jump Node" title="Direkter Link zur 3.7.2.19 Free Jump Node">​</a></h3>
+<p>The <strong>Free Jump Node</strong> allows for flexible transitions between nodes, making it suitable for scenarios where process flow requires manual decision-making, and approval steps are uncertain or involve multiple revisions.</p>
+<p>Example: A company document might be received by a secretary, then signed by a leader, and then confirmed by the secretary again.</p>
+<p>This node supports multiple incoming and outgoing connections without restrictions. During approval, the node handler can specify which single outgoing connection to follow and who will approve the next step. The selectable personnel/organizational scope can be restricted during the design phase.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="node-property-description">Node Property Description:<a href="#node-property-description" class="hash-link" aria-label="Direkter Link zur Node Property Description:" title="Direkter Link zur Node Property Description:">​</a></h3>
+<ul>
+<li><strong>Default Handler</strong>: When a non-free jump node flows into this node, the default handler is automatically identified.</li>
+<li><strong>Handler Scope</strong>: When another free jump node flows into this node, one person from the jump scope&#x27;s personnel set will be selected as the handler. Handlers can be chosen from the organizational structure, formula editor, or leader&#x27;s secretary. For leader&#x27;s secretary, specific groups can be configured; if no group is selected, all leader&#x27;s secretaries will be set as the handler scope.</li>
+<li><strong>Next Step</strong>: Configure the next selectable node(s) when flowing out of this node. It supports conditional matching for selectable nodes. If no condition is configured, the flow is visible by default. If a condition is configured, the flow can only be selected when the condition is met.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="application-scenarios-13">Application Scenarios:<a href="#application-scenarios-13" class="hash-link" aria-label="Direkter Link zur Application Scenarios:" title="Direkter Link zur Application Scenarios:">​</a></h3>
+<ul>
+<li><strong>Company Document Flow</strong>: A company document might be received by a secretary, then signed by a leader, and then confirmed by the secretary again, involving back-and-forth approvals.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="configuration-steps-8">Configuration Steps:<a href="#configuration-steps-8" class="hash-link" aria-label="Direkter Link zur Configuration Steps:" title="Direkter Link zur Configuration Steps:">​</a></h3>
+<ol>
+<li><strong>Add Free Jump Node</strong>:<br>
+<!-- -->Enter the process design interface, add a <strong>&quot;Free Jump Node&quot;</strong> to the canvas area, and configure its node properties.</li>
+<li><strong>Initiate New Instance (Frontend)</strong>:<br>
+<!-- -->The initiator creates a new process instance and selects the send object(s), then submits the instance.</li>
+<li><strong>View Instance</strong>:<br>
+<!-- -->View the instance. The user will have the option to choose the next step for the process.</li>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/process-management/chapter-3-console/3.7-process-design/3.7.2-process-node.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Diese Seite bearbeiten</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Dokumentation Seiten"><a class="pagination-nav__link pagination-nav__link--prev" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.1-process-diagram"><div class="pagination-nav__sublabel">Zurück</div><div class="pagination-nav__label">Process Diagram</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/de/docs/process-management/chapter-3-console/3.7-process-design/3.7.3-process-data"><div class="pagination-nav__sublabel">Weiter</div><div class="pagination-nav__label">3.7.3-process-data</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#372-process-node" class="table-of-contents__link toc-highlight">3.7.2 Process Node</a></li><li><a href="#3722-approval-node" class="table-of-contents__link toc-highlight">3.7.2.2 Approval Node</a></li><li><a href="#approval-comment-form-configuration" class="table-of-contents__link toc-highlight">Approval Comment Form Configuration</a></li><li><a href="#timeout-settings" class="table-of-contents__link toc-highlight">Timeout Settings</a></li><li><a href="#time-limit-settings" class="table-of-contents__link toc-highlight">Time Limit Settings</a></li><li><a href="#37222-operation-config" class="table-of-contents__link toc-highlight">3.7.2.2.2 Operation Config</a><ul><li><a href="#operations-available-for-initiator" class="table-of-contents__link toc-highlight">Operations Available for Initiator</a></li><li><a href="#actions-available-for-current-handler" class="table-of-contents__link toc-highlight">Actions Available for Current Handler</a></li><li><a href="#operations-available-for-past-handler" class="table-of-contents__link toc-highlight">Operations Available for Past Handler</a></li></ul></li><li><a href="#37223-advanced" class="table-of-contents__link toc-highlight">3.7.2.2.3 Advanced</a><ul><li><a href="#approval-settings" class="table-of-contents__link toc-highlight">Approval Settings</a></li><li><a href="#push-notification" class="table-of-contents__link toc-highlight">Push Notification</a></li></ul></li><li><a href="#3723-cc-node" class="table-of-contents__link toc-highlight">3.7.2.3 CC Node</a><ul><li><a href="#37231-application-scenario-overview" class="table-of-contents__link toc-highlight">3.7.2.3.1 Application Scenario Overview</a></li><li><a href="#37232-node-property-description" class="table-of-contents__link toc-highlight">3.7.2.3.2 Node Property Description</a></li></ul></li><li><a href="#3724-signature-node" class="table-of-contents__link toc-highlight">3.7.2.4 Signature Node</a><ul><li><a href="#37241-application-scenario-overview" class="table-of-contents__link toc-highlight">3.7.2.4.1 Application Scenario Overview</a></li></ul></li><li><a href="#3725-voting-node" class="table-of-contents__link toc-highlight">3.7.2.5 Voting Node</a><ul><li><a href="#37251-application-scenario-overview" class="table-of-contents__link toc-highlight">3.7.2.5.1 Application Scenario Overview</a></li></ul></li><li><a href="#3726-robot-node" class="table-of-contents__link toc-highlight">3.7.2.6 Robot Node</a><ul><li><a href="#application-scenarios" class="table-of-contents__link toc-highlight">Application Scenarios</a></li></ul></li><li><a href="#3727-conditional-branch" class="table-of-contents__link toc-highlight">3.7.2.7 Conditional Branch</a><ul><li><a href="#application-scenarios-1" class="table-of-contents__link toc-highlight">Application Scenarios</a></li></ul></li><li><a href="#3728-manual-branch" class="table-of-contents__link toc-highlight">3.7.2.8 Manual Branch</a><ul><li><a href="#application-scenarios-2" class="table-of-contents__link toc-highlight">Application Scenarios</a></li></ul></li><li><a href="#3729-parallel-branch" class="table-of-contents__link toc-highlight">3.7.2.9 Parallel Branch</a><ul><li><a href="#application-scenarios-3" class="table-of-contents__link toc-highlight">Application Scenarios</a></li></ul></li><li><a href="#37210-subprocess-node" class="table-of-contents__link toc-highlight">3.7.2.10 Subprocess Node</a><ul><li><a href="#application-scenarios-4" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37211-embedded-sub-process" class="table-of-contents__link toc-highlight">3.7.2.11 Embedded Sub-Process</a><ul><li><a href="#application-scenarios-5" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps-1" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37212-free-sub-process" class="table-of-contents__link toc-highlight">3.7.2.12 Free Sub-Process</a><ul><li><a href="#application-scenarios-6" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps-2" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37213-dummy-end-node" class="table-of-contents__link toc-highlight">3.7.2.13 Dummy End Node</a><ul><li><a href="#application-scenarios-7" class="table-of-contents__link toc-highlight">Application Scenarios</a></li></ul></li><li><a href="#37214-signal-waiting-node" class="table-of-contents__link toc-highlight">3.7.2.14 Signal Waiting Node</a><ul><li><a href="#application-scenarios-8" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps-3" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37215-auto-authority-process" class="table-of-contents__link toc-highlight">3.7.2.15 Auto-Authority Process</a><ul><li><a href="#application-scenarios-9" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps-4" class="table-of-contents__link toc-highlight">Configuration Steps</a></li><li><a href="#node-property-descriptions" class="table-of-contents__link toc-highlight">Node Property Descriptions</a></li></ul></li><li><a href="#37216-rule-block-sub-process" class="table-of-contents__link toc-highlight">3.7.2.16 Rule Block Sub-Process</a><ul><li><a href="#configuration-steps-5" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37217-smart-review-node" class="table-of-contents__link toc-highlight">3.7.2.17 Smart Review Node</a><ul><li><a href="#application-scenarios-10" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#configuration-steps-6" class="table-of-contents__link toc-highlight">Configuration Steps</a></li></ul></li><li><a href="#37218-dynamic-sub-process" class="table-of-contents__link toc-highlight">3.7.2.18 Dynamic Sub-Process</a><ul><li><a href="#application-scenarios-11" class="table-of-contents__link toc-highlight">Application Scenarios</a></li><li><a href="#features" class="table-of-contents__link toc-highlight">Features</a></li></ul></li><li><a href="#id-37-dynamic-subprocess-and-free-jumptitle-dynamic-sub-process-free-jump-node-process-data-and-business-methods" class="table-of-contents__link toc-highlight">id: 3.7-dynamic-subprocess-and-free-jump
+title: Dynamic Sub-Process, Free Jump Node, Process Data, and Business Methods</a><ul><li><a href="#application-scenarios-12" class="table-of-contents__link toc-highlight">Application Scenarios:</a></li><li><a href="#prerequisites" class="table-of-contents__link toc-highlight">Prerequisites:</a></li><li><a href="#configuration-steps-7" class="table-of-contents__link toc-highlight">Configuration Steps:</a></li><li><a href="#benefits" class="table-of-contents__link toc-highlight">Benefits:</a></li><li><a href="#37219-free-jump-node" class="table-of-contents__link toc-highlight">3.7.2.19 Free Jump Node</a></li><li><a href="#node-property-description" class="table-of-contents__link toc-highlight">Node Property Description:</a></li><li><a href="#application-scenarios-13" class="table-of-contents__link toc-highlight">Application Scenarios:</a></li><li><a href="#configuration-steps-8" class="table-of-contents__link toc-highlight">Configuration Steps:</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>
